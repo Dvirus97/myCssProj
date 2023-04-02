@@ -1,0 +1,136 @@
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.darkMode{
+    color-scheme: dark;
+    background-color: #282c34;
+}
+.darkMode div,
+.darkMode *
+{ 
+    border-color: white;
+}
+
+
+/* @media (prefers-color-scheme: dark){
+    div{
+        color: blue;
+    }
+} */
+
+
+input,
+select,button {
+  font-size: 1em;
+}
+
+main {
+  padding: 3em 0 2em 0;
+  margin-left: 1em;
+  width: 90vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: darkblue;
+  color:  white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: aqua;
+    color:  black;
+}
+
+nav {
+  line-height: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+nav button{
+    background-color: transparent;
+    border-width: 0;
+    /* margin: 0 .5em 0 0; */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul:last-child {
+  margin: 0 1em 0 0;
+}
+
+nav ul li a {
+  padding: 0 0.5em 0 0.5em;
+  text-decoration: none;
+  border-right: .1em solid white;
+  transition: all 0.3s;
+  color: white;
+  /* font-size: 1em; */
+  opacity: 0.7;
+}
+
+nav a:active {
+  background-color: aqua;
+  color: black;
+}
+
+nav a:hover {
+  opacity: 1;
+  font-size: 1.2em;
+}
+
+article {
+    font-family: cursive;
+    text-indent: 3em;
+}
+article::first-letter {
+    font-size: 2em;
+}
+
+form {
+  width: 30vw;
+  margin: 2em;
+}
+
+form span {
+  display: block;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+form label {
+  display: flex;
+  flex-flow: column-reverse /*wrap*/;
+  justify-content: start;
+}
+
+input {
+  line-height: 2em;
+}
+
+form input:hover ~ span,
+form input:focus ~ span {
+  opacity: 1;
+}
+
+.div1 {
+  border: 0.1em solid black;
+}
+/* @media (prefers-color-scheme:dark){
+    .div1{
+        border-color: white;
+    }
+} */
+

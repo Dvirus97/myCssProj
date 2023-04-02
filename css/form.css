@@ -1,0 +1,26 @@
+
+form {
+  width: 30vw;
+  margin: 2em;
+}
+
+form span {
+  display: block;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+form label {
+  display: flex;
+  flex-flow: column-reverse /*wrap*/;
+  justify-content: start;
+}
+
+input {
+  line-height: 2em;
+}
+
+form input:hover ~ span,
+form input:focus ~ span {
+  opacity: 1;
+}
