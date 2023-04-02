@@ -1,5 +1,5 @@
 # myCssProj
-in this proj i  played with some css
+In this proj I played with some css
 
 - dark mode / light mode.
 - form. input,hover
